@@ -910,7 +910,7 @@ def generate_random_linear_system(
     #--------------------------------------------------------------------------#
     
     A=rand_matrix(m,n,l)
-    b=rand_matrix(m,n,l)
+    b=rand_matrix(n,1,l)
     inv,ide=reduce_non_sigular_matrix_to_identity(A)
     x=matrix_multiplication(ide,b) 
     
